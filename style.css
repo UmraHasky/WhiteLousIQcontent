@@ -8,6 +8,24 @@ body{
     display: flex;
     width: 100%;
     height: 50vw;
+
+}
+.blockInfo{
+    width: 15vw;
+    height: 15vw;
+    border: 1px solid black;
+    border-radius: 3vw;
+    margin-left: 10vw;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-width: 300px;
+    pointer-events: none; /* Чтобы не мешать hover */
+}
+.blockInfo.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 .circle{
     width: 40vw;
@@ -21,18 +39,6 @@ body{
     height: 1.5vw;
     border: 1px solid black;
     border-radius: 2.5vw;
-}
-.lineG{
-    margin-top: 25%;
-    position: absolute;
-    border: 1px solid black;
-    width: 99.9%;
-}
-.lineV{
-    margin-left: 50%;
-    position: absolute;
-    border: 1px solid black;
-    min-height: 99.9%;
 }
 .circleA{
     margin: 0vw 0vw 0vw 19.28vw;
@@ -51,4 +57,13 @@ body{
 }
 .circleF{
     margin: 37.4vw 0vw 0vw 25.4vw;
+}
+.circleG{
+    margin: 29vw 0vw 0vw 35.7vw;
+}
+.circleH{
+    margin: 16vw 0vw 0vw 38.1vw;
+}
+.circleI{
+    margin: 5vw 0vw 0vw 32.2vw;
 }
